@@ -147,7 +147,7 @@ public class FeedActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, RC_PERMISSION_READ_EXTERNAL_STORAGE);
         } else {
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-            intent.setType("image/*");
+            intent.setType("*/*");
             startActivityForResult(intent, RC_IMAGE_GALLERY);
         }
     }
@@ -157,7 +157,7 @@ public class FeedActivity extends AppCompatActivity {
         if (requestCode == RC_PERMISSION_READ_EXTERNAL_STORAGE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/*");
+                intent.setType("*/*");
                 startActivityForResult(intent, RC_IMAGE_GALLERY);
             }
         }
