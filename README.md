@@ -17,4 +17,4 @@ We run a simple algorithm for generating questions from text.
 All data is stored on Firebase and accessed by Node based API
 
 
-
+Note - Alexa skill unstable AMD contains bugs
