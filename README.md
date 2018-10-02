@@ -18,3 +18,5 @@ All data is stored on Firebase and accessed by Node based API
 
 
 Note - Alexa skill unstable AMD contains bugs
+
+REST API Github Repo - https://github.com/JayLohokare/docX-REST-API
